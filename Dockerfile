@@ -5,8 +5,9 @@ ENV N8N_PORT=5678
 ENV N8N_BASIC_AUTH_ACTIVE=true
 ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=admin
+ENV WEBHOOK_URL=https://yourproject.up.railway.app
+ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false
 
 EXPOSE 5678
 
-# Use full path to avoid command-not-found issues
 CMD ["/usr/local/bin/n8n"]
