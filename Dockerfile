@@ -7,4 +7,6 @@ ENV N8N_BASIC_AUTH_USER=admin
 ENV N8N_BASIC_AUTH_PASSWORD=admin
 
 EXPOSE 5678
-CMD ["n8n"]
+
+# Use full path to avoid command-not-found issues
+CMD ["/usr/local/bin/n8n"]
